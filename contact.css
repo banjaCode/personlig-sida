@@ -1,0 +1,19 @@
+article {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    display: inline-flex;
+    top: 20%;
+    color: whitesmoke;
+    flex-direction: column;
+    max-width: 10px;
+  }
+
+
+  h2 {
+      display: inline-block;
+  }
+
+  p{
+      display: inline-block;
+  }

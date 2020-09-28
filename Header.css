@@ -9,15 +9,19 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin: 10px;
 }
 
 .body1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("pexels-julius-silver-753626.jpg");
+    url("main.jpg");
 }
 .body2 {
-  background-image: url("nedladdning.jpg");
+  background-image: url("contact-image.png");
+}
+.body3{
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  ;
 }
 
 header {
@@ -37,13 +41,16 @@ nav .Menu {
   order: 0;
   display: inline-flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  margin-right: 1vw;
 }
 
 nav .dropdown-content li {
   color: antiquewhite;
   text-align: center, center;
   background-color: tomato;
+  border: 0.1px solid cadetblue;
 }
 
 .top-link {
@@ -56,21 +63,15 @@ nav .dropdown-content li {
   border-bottom-right-radius: 5px;
 }
 
-
-
-.dropdown-link{
+.dropdown-link {
   color: antiquewhite;
 }
 
-nav .dropdown:hover {
-  background-image: linear-gradient(
-      201deg,
-      rgba(148, 148, 148, 0.07) 0%,
-      rgba(148, 148, 148, 0.07) 50%,
-      rgba(83, 83, 83, 0.07) 50%,
-      rgba(83, 83, 83, 0.07) 100%
-    ),
-    linear-gradient(rgba(0, 0, 0, 0.973), rgb(49, 7, 7));
+nav .dropdown :focus{
+  text-decoration-line: underline;
+}
+nav .dropdown:hover{
+  background-color: crimson;
 }
 
 .dropdown {
@@ -118,6 +119,7 @@ nav .dropdown:hover {
 
 .dropdown-content li:hover {
   background-color: rgb(11, 11, 129);
+  text-decoration-line: underline;
 }
 
 .logo {
