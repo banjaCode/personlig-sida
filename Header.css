@@ -6,6 +6,12 @@
   font-family: sans-serif;
 }
 body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -18,10 +24,9 @@ body {
 .body2 {
   background-image: url("contact-image.png");
 }
-.body3{
-  background-color: #00DBDE;
-  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-  ;
+.body3 {
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
 }
 
 header {
@@ -54,31 +59,31 @@ nav .dropdown-content li {
 }
 
 .top-link {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
 }
 
 .bottom-link {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 .dropdown-link {
+  font-size: 90%;
   color: antiquewhite;
 }
 
-nav .dropdown :focus{
+nav .dropdown :focus {
   text-decoration-line: underline;
 }
-nav .dropdown:hover{
+nav .dropdown:hover {
   background-color: crimson;
 }
 
 .dropdown {
   position: relative;
   display: inline;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
   font-weight: 100;
   text-align: center;
   padding: 10px;
@@ -89,7 +94,7 @@ nav .dropdown:hover{
   position: absolute;
   display: block;
   z-index: -1;
-  border-radius: 5px;
+  border-radius: 1vw;
   visibility: hidden;
   opacity: 0;
   transition: 1s;
@@ -129,9 +134,9 @@ nav .dropdown:hover{
 
 .logo img {
   width: auto;
-  height: 55px;
+  height: 5vw;
   border: 3px solid;
-  border-radius: 15px;
+  border-radius: 1vw;
 }
 
 .titel {
@@ -148,5 +153,13 @@ nav .dropdown:hover{
   border-radius: 25px;
   border: 3px solid white;
   padding: 5px;
+  text-align: center;
+}
+
+footer {
+  font-family: "Roboto Slab", serif;
+  padding: 8px;
+  background-color: black;
+  color: white;
   text-align: center;
 }

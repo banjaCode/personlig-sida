@@ -1,12 +1,15 @@
+
+
 article {
     margin-left: 10%;
     margin-right: 10%;
     position: absolute;
     display: inline-flex;
+    align-content: space-around;
     top: 20%;
     color: whitesmoke;
     flex-direction: column;
-    max-width: 10px;
+    max-width: 40%;
   }
 
 
